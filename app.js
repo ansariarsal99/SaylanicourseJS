@@ -177,3 +177,87 @@ var age = 15;
             var b = 3;
             var mod = a%b;
             document.write("The modulus of "+ a + " & " + b + " is " + mod + "<br>");
+
+            //Task # 3
+            var d;
+            document.write("The Value after variable declaration is Undefined <br>");
+            d = 5;
+            document.write("The Value after intialized is " + d + "<br>");
+            d++;
+            document.write("The Value after increment is " + d + "<br>");
+            var e = d + 7;
+            document.write("The Value after addition is " + e + "<br>");
+            e--;
+            document.write("The Value after decrement is " + e + "<br>");
+            var f= e%3;    
+            document.write("The reminder is " + f + "<br>");
+
+              //Task # 4
+              
+              var ticket = 600;
+              var pur = prompt("Enter the no of ticket you want");
+              var cost = ticket * pur ;
+              document.write("the total cost to buy "+ pur +" Movie ticket is "+ cost + " PKR<br>");
+
+
+              //Task # 5
+              document.write("<h2> Table of 4 </h2>");
+                var i;
+                var g=4;
+
+              for (i=1; i<=10; i++) 
+              {
+                document.write(g +" * "+ i +" = " + g*i + "<br/>");
+              }
+
+              //Task # 6
+
+              var c = prompt("enter the temp you want to convert in `F :");
+              var f = (c * 9/5) + 32;
+              document.write(c +"`C is "+ f +"`F <br>");
+            
+              var f = prompt("enter the temp you want to convert in `C :");
+              var c = (f-32) * (5/9);
+              document.write(f +"`F is "+ c +"`C <br>");
+
+              //Task # 7
+              var item1 = 3;
+              var item2 = 7;
+              var orqt1 = 650;
+              var orqt2 = 100;    
+              var shipping_charge= 100;
+
+              var total= item1 + item2 +orqt1 +orqt2 +shipping_charge;
+
+              document.write("Price of item 1  is" + item1 + "<br>");
+             document.write("Price of item 2 is" + item2 + "<br>");
+             document.write("Ordered quantity of item 1 is" + orqt1 + "<br>");
+             document.write("Ordered Quantity of item 2 is" + orqt2 + "<br>");
+             document.write("Shipping charges " + shipping_charge + "<br><br>");
+
+              document.write("<h3>Total cost of your order is " + total + "<br><br><br></h3>")
+
+              //Task # 8
+              var obt= 804;
+              var total = 980;
+              var per = (obt/total) * 100;
+             document.write("<h2>Marks Sheet</h2>");
+             document.write("Obtain marks are " + obt + "<br>");
+             document.write("total marks are " + total + "<br>");
+             document.write("total per is " + per + "<br><br><br>");
+
+
+            //Task # 9 
+            var usd= 10;
+            var rad=  25;
+             var con1 = usd * 104.80;
+             var con2 = rad * 28;
+
+            var pkr = con1 + con2 ;
+            document.write("Currency <br>")
+            document.write("Total Currency in PKR is " + pkr );
+
+              //Task # 10
+              var ab = 1;
+              var q =  (ab + 5)*10/2;
+              document.write(q); 
