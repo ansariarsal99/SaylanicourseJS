@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <script src="calc.js"></script>
+
+    <form name="check">
+    <table class="calcu"> 
+        <tr class="result">
+            <td colspan="4"> <input type="text" class="display" readonly="readonly" id="display" name="text" onkeydown=""></td>
+        </tr>
+        
+        <tr>
+            <td class="calc_btn"><input type="button" class="calc_bt" value="CE" onclick="check.display.value += '1' " /></td>
+            <td class="calc_btn"> <input type="button" class="calc_bt" value="<--" onclick="check.display.value -='' " /> </td>
+            <td class="calc_btn"><input type="button" class="calc_bt" value="%" onclick="check.display.value +='%' " /></td>
+            <td class="calc_btn"><input type="button" class="calc_bt" value="+" onclick="check.display.value +='+' " /></td>
+        </tr>
+
+        <tr>
+            <td class="calc_btn"><input type="button" class="calc_bt" name="7" value="7" onclick="check.display.value += '7'" /></td>
+            <td class="calc_btn"><input type="button" class="calc_bt" name="8" value="8" onclick="check.display.value += '8' " /></td>
+            <td class="calc_btn"><input type="button" class="calc_bt" name="9" value="9" onclick="check.display.value +='9' " /></td>
+            <td class="calc_btn"><input type="button" class="calc_bt" name="-" value="-" onclick="check.display.value += '-' " /></td>
+        </tr>
+        
+        <tr>
+            <td class="calc_btn"><input type="button" class="calc_bt" name="4" value="4" onclick="check.display.value +='4' " /></td>
+            <td class="calc_btn"><input type="button" class="calc_bt" name="5" value="5" onclick="check.display.value +='5' " /></td>
+            <td class="calc_btn"><input type="button" class="calc_bt" name="6" value="6" onclick="check.display.value +='6' " /></td>
+            <td class="calc_btn"><input type="button" class="calc_bt" name="*" value="*" onclick="check.display.value +='*' " /></td>
+        </tr>
+
+        <tr>
+            <td class="calc_btn"><input type="button" class="calc_bt" name="1" value="1" onclick="check.display.value +='1' " /></td>
+            <td class="calc_btn"><input type="button" class="calc_bt" name="2" value="2" onclick="check.display.value +='2' " /></td>
+            <td class="calc_btn"><input type="button" class="calc_bt" name="3" value="3" onclick="check.display.value +='3' " /></td>
+            <td class="calc_btn"><input type="button" class="calc_bt" name="/" value="/" onclick="check.display.value +='/' " /></td>
+        </tr>
+
+
+        <tr>
+            <td colspan="2" class="calc_btn"><input type="button" class="calc_bt" value="0" onclick="check.display.value +='0' " /></td>
+            <td class="calc_btn"><input type="button" class="calc_bt" value="." onclick="check.display.value +='.' " /></td>
+            <td class="calc_btn"><input type="button" class="calc_bt" value="=" onclick="check.display.value =  eval(check.display.value)" /></td>
+        </tr>
+
+    </table>
+</form>
+</body>
+</html>
