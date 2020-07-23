@@ -255,9 +255,44 @@ var age = 15;
 
             var pkr = con1 + con2 ;
             document.write("Currency <br>")
-            document.write("Total Currency in PKR is " + pkr );
+            document.write("Total Currency in PKR is " + pkr + "<br><br>");
 
               //Task # 10
-              var ab = 1;
-              var q =  (ab + 5)*10/2;
-              document.write(q); 
+              var a = 5;
+              var q =  (a + 5) * 10 / 2;
+              document.write("Result is "+ q +"<br><br>");
+              
+              //Task # 11
+              var cy= 2020;
+              var by = 1992;
+              var age = cy-by;
+              
+              document.write(" Current year is : "+ cy + "<br>");
+              document.write(" Your Birth year is : "+ by + "<br>");
+              document.write(" Your current age is : "+ age + "<br><br><br>");
+              
+
+              //Task  # 12
+              var rad = 20;
+              var cir = 2 * 3.142 * rad;
+              var area = 3.142* rad * rad;
+              document.write("Radius of circle is "+ rad + "<br>");
+              document.write("Circumference of circle is "+ cir + "<br>");
+              document.write("Area of circle is " + area + "<br><br><br>");
+
+              //Task # 13
+
+              var favsnk= "Choclate chip ";
+              var currage = 15;
+              var maxage = 65;
+              var perday= 3;
+              var total= maxage - currage * 3;
+              document.write("Favourite Snack is : "+ favsnk + "<br>");
+              document.write("Your Age is : "+ currage + "<br>");
+              document.write("Maximun Age is : "+ maxage + "<br>");
+              document.write("Average Snack per day "+ per + "<br>");
+              document.write("You will need "+ total +" to last you until the ripe old age of" + maxage +"<br>");
+
+
+
+              
